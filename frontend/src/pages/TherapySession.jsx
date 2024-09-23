@@ -1,4 +1,4 @@
-// src/pages/TherapySession.jsx
+// frontend/src/pages/TherapySession.jsx
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from '../axiosInstance';
@@ -27,34 +27,34 @@ const TherapySession = () => {
   }, [id]);
 
   if (loading) {
-    return <p className='text-center mt-10'>Loading your therapy session...</p>;
+    return <p className="text-center mt-20">Loading your therapy session...</p>;
   }
 
   if (error) {
-    return <p className='text-red-500 text-center mt-10'>{error}</p>;
+    return <p className="text-red-500 text-center mt-20">{error}</p>;
   }
 
   return (
-    <div className='container mx-auto px-4 py-10'>
-      <h2 className='text-3xl font-bold mb-4'>Your Personalized Therapy Session</h2>
+    <div className="container mx-auto px-4 py-20">
+      <h2 className="text-4xl font-bold mb-8 text-center text-accent">Your Personalized Therapy Session</h2>
       
-      <div className='bg-white shadow-md rounded p-6 mb-6'>
-        <h3 className='text-2xl font-semibold mb-4'>Recommended Ragas:</h3>
-        <ul className='list-disc list-inside mb-4'>
+      <div className="bg-white shadow-md rounded-lg p-8 mb-12">
+        <h3 className="text-2xl font-semibold mb-4 text-secondary">Recommended Ragas:</h3>
+        <ul className="list-disc list-inside mb-6">
           {session.recommendation.ragas.map((raga, index) => (
             <li key={index}>{raga}</li>
           ))}
         </ul>
         
-        <h3 className='text-2xl font-semibold mb-4'>Breathing Exercises:</h3>
-        <ul className='list-disc list-inside mb-4'>
+        <h3 className="text-2xl font-semibold mb-4 text-secondary">Breathing Exercises:</h3>
+        <ul className="list-disc list-inside mb-6">
           {session.recommendation.breathingExercises.map((exercise, index) => (
             <li key={index}>{exercise}</li>
           ))}
         </ul>
         
-        <h3 className='text-2xl font-semibold mb-4'>Special Frequencies:</h3>
-        <ul className='list-disc list-inside mb-4'>
+        <h3 className="text-2xl font-semibold mb-4 text-secondary">Special Frequencies:</h3>
+        <ul className="list-disc list-inside mb-6">
           {session.recommendation.specialFrequencies.map((freq, index) => (
             <li key={index}>{freq}</li>
           ))}

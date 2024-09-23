@@ -13,6 +13,10 @@ module.exports = {
       backgroundImage: {
         'home-bg': "url('/')", // Replace with your actual image path
       },
+      fontFamily: {
+        sans: ['"Helvetica Neue"', 'Arial', 'sans-serif'],
+        serif: ['"Merriweather"', 'serif'],
+      },
     },
   },
   plugins: [],
