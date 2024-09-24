@@ -107,7 +107,7 @@ const Questionnaire = () => {
           {/* Add more fields as needed */}
           <button
             type="submit"
-            className="w-full bg-accent text-primary py-3 rounded-lg font-semibold hover:bg-secondary transition duration-300"
+            className="w-full bg-accent text-primary py-3 rounded-lg font-semibold hover:bg-secondary hover:text-accent transition duration-300"
             disabled={loading}
           >
             {loading ? 'Submitting...' : 'Submit'}

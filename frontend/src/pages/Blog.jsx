@@ -32,7 +32,7 @@ const Blog = () => {
               <p className="text-gray-700 mb-4">{article.excerpt}</p>
               <Link
                 to={`/blog/${article.id}`}
-                className="text-secondary font-semibold hover:underline"
+                className="text-accent font-semibold hover:underline"
               >
                 Read More
               </Link>

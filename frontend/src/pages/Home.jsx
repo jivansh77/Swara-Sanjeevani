@@ -9,15 +9,15 @@ const Home = () => {
   return (
     <div className="relative">
       {/* Hero Section */}
-      <div className="relative h-screen bg-home-bg bg-cover bg-center flex items-center justify-center">
+      <div className="relative h-screen bg-home-bg bg-cover bg-bottom-8px flex items-center justify-center">
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0"></div>
         <div className="relative text-center text-white z-10">
-          <h1 className="text-6xl font-bold mb-4">Swara Sanjeevani</h1>
-          <p className="text-2xl mb-8">Music is a drug with no side effects</p>
+          <h1 className="text-8xl font-bold mb-4">Swara Sanjeevani</h1>
+          <p className="text-4xl mb-8">Music is a drug with no side effects</p>
           <Link
             to="/questionnaire"
-            className="bg-accent text-primary px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition duration-300"
+            className="bg-accent text-primary px-6 py-3 rounded-lg font-semibold hover:bg-secondary hover:text-accent transition duration-300"
           >
             Start Your Journey
           </Link>

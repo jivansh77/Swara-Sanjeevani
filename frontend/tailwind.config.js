@@ -11,7 +11,7 @@ module.exports = {
         accent: '#512202',       // Dark Brown
       },
       backgroundImage: {
-        'home-bg': "url('/')", // Replace with your actual image path
+        'home-bg': "url('/src/assets/bg.png')", // Replace with your actual image path
       },
       fontFamily: {
         sans: ['"Helvetica Neue"', 'Arial', 'sans-serif'],
