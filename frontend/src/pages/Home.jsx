@@ -6,6 +6,7 @@ import Testimonials from '../components/Testimonials';
 import ContactUs from '../components/ContactUs';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import FAQs from '../components/FAQ';
 
 const Home = () => {
   // Initialize tsParticles instance
@@ -133,11 +134,11 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Smooth Scrolling Sections */}
       <div>
         <AboutUs />
         <Testimonials />
         <ContactUs />
+        <FAQs />
       </div>
     </div>
   );

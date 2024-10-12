@@ -16,7 +16,7 @@ exports.getLatestSession = async (req, res) => {
     const latestSession = await Session.findOne({ user: req.user.id }).sort({ date: -1 });
 
     if (!latestSession) {
-      return res.status(404).json({ msg: 'No recommendations available. Please complete the questionnaire first.' });
+      return res.status(404).json({ msg: 'No recommendations available. Please chat with Swara first.' });
     }
 
     res.json(latestSession);

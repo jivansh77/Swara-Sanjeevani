@@ -11,11 +11,14 @@ import Footer from './components/Footer';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import Questionnaire from './pages/Questionnaire';
+import Logout from './components/Auth/Logout';
 
 function App() {
   return (
     <Router>
+      <div className="flex flex-col min-h-screen">
       <Navbar />
+      <main className="flex-grow">
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/therapy/:id' element={<TherapySession />} />
@@ -25,9 +28,12 @@ function App() {
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/logout' element={<Logout />} />
         <Route path='/questionnaire' element={<Questionnaire />} />
       </Routes>
+      </main>
       <Footer />
+      </div>
     </Router>
   );
 }
