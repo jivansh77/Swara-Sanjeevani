@@ -16,7 +16,7 @@ const AboutUs = () => {
         
         <div className="lg:w-1/2 lg:pl-10">
           <img 
-            src="https://media.canva.com/v2/image-resize/format:PNG/height:572/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2FMeyps%2FMAGOmKMeyps%2F1%2Fp.png/watermark:F/width:800?csig=AAAAAAAAAAAAAAAAAAAAAP8hSYq35H1AblJbe3ThAYWgHYx9kxt-AbZNcTMgUa2-&exp=1728780332&osig=AAAAAAAAAAAAAAAAAAAAAK3w9B4wxmCBcG7F8l8-EcEQeQ8L5Vm5k7vYtqGJmKnC&signer=media-rpc&x-canva-quality=screen" 
+            src="/about.jpg" 
             alt="Music Therapy" 
             className="w-full h-auto object-cover rounded-2xl"
           />

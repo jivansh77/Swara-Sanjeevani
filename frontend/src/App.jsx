@@ -12,6 +12,7 @@ import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import Questionnaire from './pages/Questionnaire';
 import Logout from './components/Auth/Logout';
+import Therapists from './pages/Therapists';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/logout' element={<Logout />} />
         <Route path='/questionnaire' element={<Questionnaire />} />
+        <Route path='/therapists' element={<Therapists />} />
       </Routes>
       </main>
       <Footer />
